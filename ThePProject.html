@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Investigation PP </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="CSS.css"/>
+  	<script src="https://kit.fontawesome.com/61c19d5079.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="shotcut icon" type="image/png" href="apple-touch-icon.png">
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light">
+			  <a class="navbar-brand" href="index.html">Investigation<span class ="suite">'PP'</span></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-lg-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="index.html" >Home<span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+			          Categories
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="Amsterdam.html">Amsterdam</a>
+			          <a class="dropdown-item" href="Nature.html">Nature</a>
+			          <a class="dropdown-item" href="City.html">City</a>
+			        </div>
+			    </li>
+			     <li class="nav-item">
+			        <a class="nav-link" href="#" style="color: black;">The <span class="suite">PP</span>roject</a>		      
+			      </li>
+			    </ul>
+			
+				<div id="reseauxgauche">
+				<a href="https://www.instagram.com/investigation_pp/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+				<a href="https://twitter.com/InvestigationPp" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+				</div>
+			  </div>
+			</nav>
+		</div>
+	</header>
+	<h1 style="text-align: center; margin-top: 100px">IPP</h1>
+
+	<p  class="PProject" > IPP is a project that aims to investigate the world. By melting photography and philosophy I want to propose some analysis of our society. 
+	Everything started when I went to Amsterdam a few years ago and took my first pics. As I am very passionate about philosophy, I decided to mix both and create IPP. 
+	The goal of this project is to offer an invitation to reflection and interpretation. 
+	I'm a crypto maximalist, which led me to be an NFT Artist. You can now purchase my first NFT and review my investigation. 
+	Be aware, NFT Owners will be the only ones to access to investigations.  </p>
+	
+	<p class="PProject">Investigation may be open to collaboration in the future... Anyone can be an investigator.  
+	 </p>
+
+
+    <hr size="3" width="100%" color="#e9967a">
+<section class="contact">
+	<div class="heading white">
+		<h2>Contact</h2>
+	
+	</div>
+	<div class="content">
+		<div class="contactInfo"  class="col-xs-12 col-sm-6">		
+			<div class="contactInfoBx">
+				<div class="box">
+					<div class="icon">
+						<i class="far fa-envelope"></i>
+					</div>
+			<div class="text1">
+			<h3>E-mail</h3>
+			<p>Investigation.pp@gmail.com</p>
+				</div>
+			</div>
+		</div>
+			<div class="contactInfoBx">
+				<div class="box">
+					<div class="icon">
+						<i class="far fa-heart"></i>
+					</div>
+					<div>
+				<h3>My social networks</h3>
+			<ul>
+				<li class="reseauxbottom"><a href="https://twitter.com/InvestigationPp" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+				<li class="reseauxbottom"><a href="https://www.instagram.com/investigation_pp/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+				<li class="reseauxbottom"><a href="https://pin.it/4Gucor7" target="_blank"><i class="fab fa-pinterest-square fa-2x"></i></a></li>
+				<li class="reseauxbottom"><a href="https://open.spotify.com/playlist/1WVeIqcS7YTkkwVMbGt1YA?si=66e3569a393349b0" target="_blank"><i class="fab fa-spotify fa-2x"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="formBx"  class="col-xs-12 col-sm-6">
+	
+		<form id=submit-form action="" method="post">
+			<h3>Contact Me</h3>
+			<input type="text" name="Nom" placeholder="Nom">
+			<input type="text" id="email" name="E-mail" placeholder="E-mail"  size="45" required>
+			<textarea name="Message" placeholder="Ton Message"></textarea>
+			<input type="submit" value="Send">			
+		</form>
+	</div>
+	</div>
+</div>
+
+</section>
+<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzDVNvsCMTTKUJY4Rf8mbpTBOW_jerPvnT_uvtHhCKP-g7i2oib/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Merci pour ton message !")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
